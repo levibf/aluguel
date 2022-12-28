@@ -164,12 +164,8 @@
               </div>
             </div>
             <!-- Megamenu end     -->
-            <!-- Languages dropdown    -->
-            <div class="list-inline-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="img/flags/16/GB.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
-              <div aria-labelledby="languages" class="dropdown-menu"><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/DE.png" alt="English" class="mr-2"><span>German</span></a><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/FR.png" alt="English" class="mr-2"><span>French  </span></a></div>
-            </div>
             <!-- Log out               -->
-            <div class="list-inline-item logout">                   <a id="logout" href="login.html" class="nav-link">Logout <i class="icon-logout"></i></a></div>
+            <div class="list-inline-item logout">                   <a id="logout" href="login.html" class="nav-link">Sair <i class="icon-logout"></i></a></div>
           </div>
         </div>
       </nav>
@@ -185,25 +181,25 @@
             <p>Web Designer</p>
           </div>
         </div>
-        <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+        <!-- Sidebar Navidation Menus--><span class="heading">Geral</span>
         <ul class="list-unstyled">
                 <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
-                <li><a href="tables.html"> <i class="icon-grid"></i>Tables </a></li>
-                <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
-                <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
-                <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Example dropdown </a>
+                <li><a href="tables.html"> <i class="icon-grid"></i>Tabelas </a></li>
+                <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Contabilidade </a></li>
+                <li><a href="forms.html"> <i class="icon-padnote"></i>Relatórios </a></li>
+                <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Aluguéis </a>
                   <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Proprietários de Aluguel</a></li>
+                    <li><a href="#">Propriedades</a></li>
+                    <li><a href="#">Inquilinos</a></li>
                   </ul>
                 </li>
-                <li><a href="login.html"> <i class="icon-logout"></i>Login page </a></li>
+                <li><a href="login.html"> <i class="icon-logout"></i>Entrar </a></li>
         </ul><span class="heading">Extras</span>
         <ul class="list-unstyled">
-          <li> <a href="#"> <i class="icon-settings"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-writing-whiteboard"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li>
+          <li> <a href="#"> <i class="icon-settings"></i>... </a></li>
+          <li> <a href="#"> <i class="icon-writing-whiteboard"></i>... </a></li>
+          <li> <a href="#"> <i class="icon-chart"></i>... </a></li>
         </ul>
       </nav>
       <!-- Sidebar Navigation end-->
