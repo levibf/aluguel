@@ -1,0 +1,68 @@
+CRITICAL - 2022-12-28 18:29:45 --> syntax error, unexpected '=', expecting ']'
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 18:52:53 --> Undefined variable: data
+in APPPATH\Views\Home\index.php on line 12.
+ 1 APPPATH\Views\Home\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\Home\\index.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Home/index', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('Home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 18:53:16 --> Undefined variable: data
+in APPPATH\Views\Home\index.php on line 12.
+ 1 APPPATH\Views\Home\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\Home\\index.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Home/index', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('Home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 19:01:18 --> Invalid file: Layout/principal.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layout/principal.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/principal', [], true)
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Home/index', [], true)
+ 4 APPPATH\Controllers\Home.php(12): view('Home/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 19:01:22 --> Invalid file: Layout/principal.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layout/principal.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/principal', [], true)
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Home/index', [], true)
+ 4 APPPATH\Controllers\Home.php(12): view('Home/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 19:08:58 --> Invalid file: Layout/principal.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layout/principal.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/principal', [], true)
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Home/index', [], true)
+ 4 APPPATH\Controllers\Home.php(12): view('Home/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
