@@ -4,7 +4,7 @@ namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 
-class ProprietarioFakerSeeder extends Seeder
+class InquilinosFakerSeeder extends Seeder
 {
     public function run()
     {
@@ -31,7 +31,7 @@ class ProprietarioFakerSeeder extends Seeder
 
         }
 
-        $proprietarioModel->skipValidation(true) // bypass pela validação
+        $InquilinosModel->skipValidation(true) // bypass pela validação
                      ->protect(false) // bypass pelo AllowedFields do model para adicioanr a coluna ativo
                      ->insertBatch($usuariosPush);
 

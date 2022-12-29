@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CriarTabelaProprietarios extends Migration
+class CriarTabelaInquilinos extends Migration
 {
     public function up()
     {
@@ -79,11 +79,11 @@ class CriarTabelaProprietarios extends Migration
         $this->forge->addKey('id', true);
         $this->forge->addUniqueKey('email');
 
-        $this->forge->createTable('proprietarios');
+        $this->forge->createTable('inquilinos');
     }
 
     public function down()
     {
-        $this->forge->dropTable('proprietarios');
+        $this->forge->dropTable('inquilinos');
     }
 }

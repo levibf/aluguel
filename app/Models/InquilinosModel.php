@@ -4,17 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProprietarioModel extends Model
+class InquilinosModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'proprietarios';
+    protected $table            = 'inquilinos';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = true;
+    protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    //Colocar as colunas novas em que os dados são permitidos ser manipulados, foi retirado ID porque é auto increment e coluna ATIVO
     protected $allowedFields    = [
         "nome",
         "endereco",
@@ -26,9 +25,9 @@ class ProprietarioModel extends Model
         "reset_expira_em",
         "imagem",
     ];
-
+    
     // Dates
-    protected $useTimestamps = true; //Ativando vai deixar os campos (colunas) abaixo sendo atualizados automatico pelo CI4, quando houver alteração vai ser colocado
+    protected $useTimestamps = true; //Atualiza os campos abaixo
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'criado_em';
     protected $updatedField  = 'atualizado_em';
