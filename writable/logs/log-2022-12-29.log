@@ -1003,3 +1003,338 @@ FROM `inquilinos`', [], false)
 10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2022-12-29 18:29:47 --> mysqli_sql_exception: Unknown column 'situacao' in 'field list' in C:\xampp2\htdocs\aluguel\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp2\htdocs\aluguel\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\xampp2\htdocs\aluguel\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\xampp2\htdocs\aluguel\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\xampp2\htdocs\aluguel\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\xampp2\htdocs\aluguel\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\aluguel\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\aluguel\app\Controllers\Inquilinos.php(32): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\aluguel\system\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+#8 C:\xampp2\htdocs\aluguel\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+#9 C:\xampp2\htdocs\aluguel\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\aluguel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\aluguel\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+CRITICAL - 2022-12-29 18:29:47 --> Unknown column 'situacao' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Inquilinos.php(32): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2022-12-29 18:30:40 --> mysqli_sql_exception: Unknown column 'situacao' in 'field list' in C:\xampp2\htdocs\aluguel\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp2\htdocs\aluguel\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\xampp2\htdocs\aluguel\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\xampp2\htdocs\aluguel\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\xampp2\htdocs\aluguel\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\xampp2\htdocs\aluguel\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\aluguel\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\aluguel\app\Controllers\Inquilinos.php(32): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\aluguel\system\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+#8 C:\xampp2\htdocs\aluguel\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+#9 C:\xampp2\htdocs\aluguel\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\aluguel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\aluguel\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+CRITICAL - 2022-12-29 18:30:40 --> Unknown column 'situacao' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `nome`, `email`, `situacao`, `imagem`
+FROM `inquilinos`', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Inquilinos.php(32): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:07:28 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Inquilinos.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:10:07 --> Undefined variable: usuarios
+in APPPATH\Controllers\Inquilinos.php on line 38.
+ 1 APPPATH\Controllers\Inquilinos.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuarios', 'APPPATH\\Controllers\\Inquilinos.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:11:29 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:11:56 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:41 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:41 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:42 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:42 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:43 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:43 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:43 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:13:47 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:15:09 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:16:23 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:16:24 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:16:24 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:16:25 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:16:25 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:16:26 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 APPPATH\Controllers\Inquilinos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:18:32 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:18:45 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:18:45 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:18:45 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:18:46 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:18:55 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:19:10 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:19:16 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:19:30 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:19:30 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:19:31 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:19:31 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Controllers\Inquilinos.php on line 40.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('inquilinos/recuperainquilinos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('inquilinos/recuperainquilinos')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('inquilinos/recuperainquilinos')
+ 4 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-29 19:20:01 --> Trying to get property 'nome' of non-object
+in APPPATH\Controllers\Inquilinos.php on line 39.
+ 1 APPPATH\Controllers\Inquilinos.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nome\' of non-object', 'APPPATH\\Controllers\\Inquilinos.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Inquilinos->recuperainquilinos()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquilinos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
