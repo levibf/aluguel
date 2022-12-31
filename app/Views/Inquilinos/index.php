@@ -8,8 +8,7 @@
 
 <?= $this->section('estilos') ?>
     <!-- Coloca conteudo-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/r-2.3.0/datatables.min.css"/>
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.13.1/r-2.4.0/datatables.min.css"/>
 <?= $this->endSection('estilos') ?>
 
 
@@ -24,10 +23,10 @@
                     <table id="ajaxTable" class="table table-striped" style="width: 100%;">
                         <thead>
                             <tr>
-                                <th>Imagem</th>
                                 <th>Nome</th>
                                 <th>Email</th>
                                 <th>Situação</th>
+                                <th>Ações</th>
                             </tr>
                         </thead>
                     </table>
@@ -41,11 +40,11 @@
 
 <?= $this->section('scripts') ?>
 
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.12.1/r-2.3.0/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.13.1/r-2.4.0/datatables.min.js"></script>
 
 <script>
     $(document).ready(function () {
-        // Tradução da tabela para PT
+
         const DATATABLE_PTBR = {
             "sEmptyTable": "Nenhum registro encontrado",
             "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
@@ -76,26 +75,22 @@
                 }
             }
         }
-        //Função para buscar usuarios e configurar o que vai ser mostrado
-        $('#ajaxTable').DataTable({
-            "oLanguage": DATATABLE_PTBR,
-            ajax: '<?= site_url('configurando'); ?>',
-            columns: [
-                { data: 'imagem' },
-                { data: 'nome' },
-                { data: 'email' },
-                { data: 'ativo' },
-            ],
-            "deferrender": true,
-            "processing": true,
-            "language": {
-                processing: '<i class="fa far-spinner far-spin fa-3x fa-fw"></i>', //Carregar o loading da tela
-            },
-            "responsive": true,
-            //Configurar resposividade para celular
-            "pagingType": $(window).width() < 768 ? "simple" : "simple_numbers",
-        });
+
+
+    $('#ajaxTable').DataTable({
+
+        "oLanguage": DATATABLE_PTBR,
+
+        ajax: '<?php echo site_url('inquilinos/recuperainquilinos')?>',
+        columns: [
+            { data: 'nome' },
+            { data: 'email' },
+            { data: 'ativo' },
+        ],
+        "deferRender": true,
+        "processing": true,
     });
+});
 </script>
 
 <?= $this->endSection('scripts') ?>

@@ -40,7 +40,7 @@
             <form id="searchForm" action="#">
               <div class="form-group">
                 <input type="search" name="search" placeholder="What are you searching for...">
-                <button type="submit" class="submit">Search</button>
+                <button type="submit" class="submit">Pesquisar</button>
               </div>
             </form>
           </div>
@@ -206,7 +206,7 @@
       <div class="page-content">
         <div class="page-header">
           <div class="container-fluid">
-            <h2 class="h5 no-margin-bottom"><?= $titulo; ?></h2>
+            <h2 class="h5 no-margin-bottom"></h2>
           </div>
         </div>
         <section class="no-padding-top no-padding-bottom">
