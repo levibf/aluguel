@@ -66,7 +66,7 @@ class Inquilinos extends BaseController
         ];
 
         //dd($inquilino);
-        return view('Usuarios/exibir', $data);
+        return view('Inquilinos/exibir', $data);
     }
 
     private function buscaUsuarioOu404(int $id = null){
